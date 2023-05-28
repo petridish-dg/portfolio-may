@@ -5,12 +5,19 @@
 @font-face {
 	font-family: 'PPmontreal';
 	src: url(/fonts/PP-Medium.ttf);
+	font-weight: 400;
+}
+@font-face {
+	font-family: 'PPmontreal';
+	src: url(/fonts/PP-Semibold.ttf);
+	font-weight: 600;
 }
 
 html {
-	background-color: #ffffff;
-	color: #000000;
+	background-color: #12130e;
+	color: #f2f1ee;
 	font-family: 'PPmontreal', sans-serif;
+	font-weight: 400;
 }
 
 @layer components {

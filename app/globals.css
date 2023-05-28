@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+	font-family: 'PPmontreal';
+	src: url(/fonts/PP-Medium.ttf);
+}
+
+html {
+	background-color: #ffffff;
+	color: #000000;
+	font-family: 'PPmontreal', sans-serif;
+}
+
+@layer components {
+	.cntnr {
+		@apply px-8 py-8;
+	}
+}

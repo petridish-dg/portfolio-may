@@ -3,30 +3,36 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: 'PPmontreal';
-  src: url(/fonts/PP-Medium.ttf);
-  font-weight: 400;
+	font-family: 'PPmontreal';
+	src: url(/fonts/PP-Medium.ttf);
+	font-weight: 400;
 }
 
 @font-face {
-  font-family: 'PPmontreal';
-  src: url(/fonts/PP-Semibold.ttf);
-  font-weight: 600;
+	font-family: 'PPmontreal';
+	src: url(/fonts/PP-Semibold.ttf);
+	font-weight: 600;
 }
 
 html {
-  font-family: 'PPmontreal', sans-serif;
-  font-weight: 400;
-  background-color: #0f100e;
-  color: #f2f1ee;
+	font-family: 'PPmontreal', sans-serif;
+	font-weight: 400;
+	background-color: #0f100e;
+	color: #f2f1ee;
+}
+
+@layer base {
+	h1 {
+		@apply text-4xl md:text-5xl lg:text-6xl;
+	}
 }
 
 @layer components {
-  .cntnr {
-    @apply px-8 py-8;
-  }
+	.cntnr {
+		@apply px-4 py-8 md:px-8;
+	}
 
-  .global-grid {
-    @apply grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8;
-  }
+	.global-grid {
+		@apply grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8;
+	}
 }

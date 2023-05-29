@@ -1,24 +1,33 @@
-import Image from "next/image";
+import Image from 'next/image';
 
 export default function Home() {
-  return (
-    <main>
-      <section className="pt-28">
-        <div className="cntnr">
-          <h1 className="text-5xl">
-            Portfolio of Peter de Guzman.
-            <br />
-            Digital Designer specializing in strategic design.
-          </h1>
-        </div>
-        <div className="global-grid cntnr">
-          <div className="col-span-5">
-            <p>Chicago, IL</p>
-          </div>
-          <div className="col-span-3 text-right">2020 - 2023</div>
-        </div>
-      </section>
-      <section className="h-screen"></section>
-    </main>
-  );
+	return (
+		<main>
+			<section className="flex  flex-col gap-12 pt-16">
+				<div className="cntnr">
+					<div className="flex justify-between px-60">
+						<p>P</p>
+						<p>D</p>
+						<p>G</p>
+					</div>
+				</div>
+				<div className="cntnr">
+					<h1>
+						Portfolio of Peter de Guzman.&#160;
+						<br className="hidden md:block"></br>
+						Digital Designer specializing in strategic design.
+					</h1>
+				</div>
+				<div className="global-grid cntnr text-sm">
+					<div className="col-span-1 md:col-span-2 lg:col-span-5">
+						<p>Based in Chicago, IL.</p>
+					</div>
+					<div className="col-span-1 text-right md:col-span-2 lg:col-span-3">
+						2020 - 2023
+					</div>
+				</div>
+			</section>
+			<section className="h-screen"></section>
+		</main>
+	);
 }

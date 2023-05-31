@@ -6,9 +6,9 @@ export default function Home() {
 			<section className="flex  flex-col gap-12 pt-16">
 				<div className="cntnr">
 					<div className="flex justify-between px-60">
-						<p>P</p>
-						<p>D</p>
-						<p>G</p>
+						<div className="flex h-40 w-40 items-center justify-center rounded-full border-4 border-white">
+							<p className=''>P</p>
+						</div>
 					</div>
 				</div>
 				<div className="cntnr">
@@ -27,7 +27,12 @@ export default function Home() {
 					</div>
 				</div>
 			</section>
-			<section className="h-screen"></section>
+			<section className="h-screen">
+				<h2 className="cntnr">Process</h2>
+				<div className="bt-white">
+					<h3 className="cntnr">Research</h3>
+				</div>
+			</section>
 		</main>
 	);
 }

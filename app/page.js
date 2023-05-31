@@ -6,9 +6,9 @@ export default function Home() {
 			<section className="flex  flex-col gap-12 pt-16">
 				<div className="cntnr">
 					<div className="flex justify-between px-60">
-						<div className="flex h-40 w-40 items-center justify-center rounded-full border-4 border-white">
-							<p className=''>P</p>
-						</div>
+						<LogoLetter letter="P"/>
+						<LogoLetter letter="D"/>
+						<LogoLetter letter="G"/>
 					</div>
 				</div>
 				<div className="cntnr">
@@ -36,3 +36,10 @@ export default function Home() {
 		</main>
 	);
 }
+
+function LogoLetter({letter}) {
+	return <div className="flex h-40 w-40 items-center justify-center rounded-full border-4 border-white">
+		<p className=''>{letter}</p>
+	</div>;
+}
+

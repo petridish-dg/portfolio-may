@@ -9,6 +9,7 @@ export default function Home() {
 						<LogoLetter letter="P" />
 						<LogoLetter letter="D" />
 						<LogoLetter letter="G" />
+			
 					</div>
 				</div>
 				<div className="cntnr">

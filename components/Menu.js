@@ -34,7 +34,7 @@ function MenuWindow() {
 	return (
 		<m.div className="cntnr fixed left-0 top-[-2rem] z-50 h-screen w-full bg-green-500">
 			<div className="flex flex-col gap-4">
-				<p onClick={() => setIsOpen(false)}>Works</p>
+				<button onClick={() => setIsOpen(false)}>Works</button>
 				<p>About</p>
 				<p>Connect</p>
 			</div>
